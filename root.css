@@ -1,0 +1,96 @@
+:root {
+
+    /* --------Colors-------- */
+    --primary-color: #1890ff;
+    --hover-color: #40a9ff;
+    --focus-color: #096dd9;
+    --disabled-color: #f5f5f5;
+    --font-color: #ffffff;
+
+    /* -------Fonts------- */
+
+    --font-size-default: 16px;
+    --font-size-large: 18px;
+
+    /* -------Paddings------- */
+
+    --padding-default: 5px 16px;
+    --padding-large: 8px 16px;
+
+    /* --------Margins-------- */
+    
+    --margin-large: 42px;
+
+    /* --------Others-------- */
+    
+    --input-size-large: 40px;
+    --border-radius: 2px;
+    --button-size-default: 32px;
+}
+
+body {
+    margin: var(--margin-large);
+}
+
+.btn {
+    padding: var(--padding-default);
+    height: var(--button-size-default);
+    font-size: var(--font-size-default);
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+.btn:disabled {
+    background-color: var(--disabled-color);
+    cursor: not-allowed;
+    color: #bfbfbf;
+}
+
+.input {
+    height: var(--input-size-large);
+    padding: var(--padding-large);
+    font-size: var(--font-size-large);
+    border: 1px solid #d9d9d9;
+    border-radius: var(--border-radius);
+}
+
+.input-icon {
+    padding-left: 40px;
+}
+
+.button-icon {
+    margin-right: 5px;
+    height: 12px;
+}
+
+.input:focus {
+    border-color: var(--focus-color);
+    outline: none;
+}
+
+.input:hover {
+    border-color: var(--hover-color);
+}
+
+.input:typing {
+    border-color: var(--focus-color);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
